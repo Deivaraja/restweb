@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Booking - Restaurant</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #3b0a0a, #731010);
+      color: #fdf7e3;
+    }
+
+    .logo-container {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffd700;
+    }
+
+    .logo-container img {
+      height: 80px;
+    }
+
+    nav {
+      background: linear-gradient(to right, #9a0000, #c70039);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fdf7e3;
+      text-decoration: none;
+      margin: 10px 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+      padding: 8px 12px;
+      border-radius: 20px;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 215, 0, 0.3);
+      color: #ffd700;
+    }
+
+    header {
+      background: linear-gradient(135deg, #c70039 0%, #ff5733 100%);
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    header h1 {
+      color: #ffd700;
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .booking-section {
+      background: rgba(255, 215, 0, 0.1);
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+    }
+
+    .booking-section h2 {
+      text-align: center;
+      color: #ffd700;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .booking-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, select, button {
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ffd700;
+      border-radius: 8px;
+      transition: border-color 0.3s;
+      background-color: #fdf7e3;
+    }
+
+    input:focus, select:focus {
+      border-color: #ff5733;
+      outline: none;
+    }
+
+    button {
+      background: linear-gradient(to right, #c70039, #ff5733);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.3s;
+      padding: 12px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #9a0000, #c70039);
+      transform: translateY(-2px);
+    }
+
+    #confirmation {
+      text-align: center;
+      margin-top: 20px;
+      color: #ffd700;
+      font-weight: bold;
+      display: none;
+    }
+
+    #preview {
+      text-align: center;
+      margin-top: 10px;
+      color: #fdf7e3;
+      font-style: italic;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #731010 0%, #3b0a0a 100%);
+      color: #fdf7e3;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    footer img {
+      height: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    footer p {
+      display: inline;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo-container">
+    <img src="logo.webp" alt="Logo">
+  </div>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="administration.html">Administration</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Book a Table</h1>
+  </header>
+
+  <div class="booking-section">
+    <h2>Reserve Your Table</h2>
+    <form class="booking-form" id="bookingForm">
+      <label for="name">Full Name:</label>
+      <input type="text" name="name" id="name" placeholder="Your Full Name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" name="email" id="email" placeholder="you@example.com" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" name="phone" id="phone" placeholder="123-456-7890" required>
+
+      <label for="guests">Guests:</label>
+      <select name="guests" id="guests" required>
+        <option value="" disabled selected>Choose number of guests</option>
+        <option value="1">1 Guest</option>
+        <option value="2">2 Guests</option>
+        <option value="3">3 Guests</option>
+        <option value="4">4 Guests</option>
+        <option value="5">5 Guests</option>
+        <option value="6+">6+ Guests</option>
+      </select>
+
+      <label for="date">Date:</label>
+      <input type="date" name="date" id="date" required>
+
+      <label for="time">Time:</label>
+      <input type="time" name="time" id="time" required>
+
+      <div id="preview"></div>
+
+      <button type="submit">Book Now</button>
+    </form>
+
+    <div id="confirmation">✅ Your booking has been submitted!</div>
+  </div>
+
+  <footer>
+    <img src="logo.webp" alt="Logo">
+    <p>© 2025 HOTEL BROTHERS | Designed by DEIVARAJA</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('bookingForm');
+    const confirmation = document.getElementById('confirmation');
+    const preview = document.getElementById('preview');
+    const dateInput = document.getElementById('date');
+    const timeInput = document.getElementById('time');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      confirmation.style.display = 'block';
+      form.reset();
+      preview.innerHTML = '';
+    });
+
+    function updatePreview() {
+      const date = dateInput.value;
+      const time = timeInput.value;
+      if (date && time) {
+        preview.textContent = `📅 You selected: ${date} at ${time}`;
+      } else {
+        preview.textContent = '';
+      }
+    }
+
+    dateInput.addEventListener('change', updatePreview);
+    timeInput.addEventListener('change', updatePreview);
+  </script>
+
+</body>
+</html>

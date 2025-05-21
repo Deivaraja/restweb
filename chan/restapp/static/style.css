@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #181043;
+            color: #f5f5f5;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px 0;
+            background: linear-gradient(135deg, #2a004f 0%, #3b0071 100%);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        header img {
+            height: 55px;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+        }
+
+        header h1 {
+            display: inline-block;
+            margin-left: 12px;
+            font-family: 'Playfair Display', serif;
+            color: #ffc107;
+            vertical-align: middle;
+            font-size: 2.2rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            background: linear-gradient(to right, #512884, #7952b3);
+            padding: 12px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: #ffdd57;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            font-size: 17px;
+            transition: all 0.3s ease;
+            padding: 8px 12px;
+            border-radius: 20px;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        .promo {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('back.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            padding: 100px 40px;
+            text-align: left;
+            border-radius: 12px;
+            margin: 35px auto;
+            width: 90%;
+            max-width: 1140px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .promo h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #ffc107;
+            font-family: 'Playfair Display', serif;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .promo p {
+            max-width: 620px;
+            color: #eeeeee;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .promo .btn {
+            display: inline-block;
+            background: linear-gradient(to right, #c59d5f, #b5832b);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .promo .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px auto;
+            max-width: 1140px;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #251f47, #362a6c);
+            padding: 25px;
+            border-radius: 14px;
+            width: 320px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin-top: 20px;
+            color: #fbc531;
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #cccccc;
+            line-height: 1.6;
+        }
+
+        .card a {
+            display: inline-block;
+            background-color: #7d56b2;
+            color: white;
+            text-decoration: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            margin-top: 15px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .card a:hover {
+            background-color: #9d72e6;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            margin-top: 70px;
+            padding: 40px 25px;
+            text-align: center;
+            font-size: 15px;
+            color: #aaaaaa;
+            background: linear-gradient(135deg, #2a004f 0%, #3b0071 100%);
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #ffc107;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Your HTML structure remains unchanged -->
+</body>
+</html>

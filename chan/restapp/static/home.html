@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOTEL BROTHERS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #1c1c3b, #2c2c54);
+      color: #fdf7e3;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #26004f, #3b0071);
+    }
+
+    header img {
+      height: 80px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(to right, #512884, #7952b3);
+      padding: 12px;
+    }
+
+    nav a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 204, 0, 0.3);
+    }
+
+    .promo {
+      text-align: center;
+      padding: 40px;
+      background: rgba(255, 204, 0, 0.15);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      max-width: 700px;
+      margin: 40px auto;
+    }
+
+    .promo h2 {
+      font-size: 24px;
+      color: #ffd700;
+    }
+
+    .promo p {
+      font-size: 18px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 900px;
+      margin: 40px auto;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #2c2c3e, #3b3b5f);
+      padding: 25px;
+      border-radius: 12px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .card h3 {
+      color: #ffcc00;
+    }
+
+    .card p {
+      font-size: 16px;
+    }
+
+    .card a {
+      display: inline-block;
+      background: linear-gradient(to right, #ff9900, #ff6600);
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      background: linear-gradient(to right, #ff7700, #ff4400);
+    }
+
+    .hours p {
+      font-size: 14px;
+      color: #ffd700;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #26004f, #3b0071);
+    }
+
+    footer img {
+      height: 60px;
+    }
+
+    footer p {
+      font-size: 14px;
+      color: #ffd700;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.webp" alt="HOTEL BROTHERS LOGO" />
+  </header>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About Us</a>
+    <a href="administration.html">Administration</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="book.html">Book a Table</a>
+  </nav>
+
+  <section class="promo">
+    <h2>Special Weekend Discount - 30% Off</h2>
+    <p>Come enjoy our exclusive weekend promotion! Our dishes are crafted using fresh, high-quality ingredients. Don’t miss out on this amazing offer!</p>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <h3>Our New Menu</h3>
+      <p>Discover our brand-new menu, inspired by local and international flavors. We have something for every taste!</p>
+      <a href="menu.html">Explore our new menu</a>
+    </div>
+
+    <div class="card">
+      <h3>Book a Table</h3>
+      <p>Reserve your table online with ease. Choose your date and time, and enjoy an unforgettable dining experience.</p>
+      <a href="book.html">Book your table now</a>
+    </div>
+
+    <div class="card">
+      <h3>Our Opening Hours</h3>
+      <p>We are open every day to serve you! Check out our opening hours:</p>
+      <div class="hours">
+        <p>Mon - Fri: 2:00 PM - 10:00 PM</p>
+        <p>Sat: 2:00 PM - 11:00 PM</p>
+        <p>Sun: 2:00 PM - 9:00 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <img src="logo.webp" alt="HOTEL BROTHERS" />
+    <p>Designed and developed by <a href="#">DEIVARAJA</a></p>
+  </footer>
+
+</body>
+</html>
